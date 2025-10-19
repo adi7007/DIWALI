@@ -146,13 +146,38 @@
       pointer-events: none;
     }
 
-    @media (max-width: 768px) {
-      h1 { font-size: 2.8rem; }
-      .message { font-size: 1rem; padding: 18px; }
-      .lamp { width: 90px; height: 45px; }
-      .footer { font-size: 1rem; }
-    }
-  </style>
+     @media (max-width: 1024px) {
+    h1 { font-size: 3rem; }
+    .message { font-size: 1.05rem; padding: 22px; }
+    .lamp { width: 100px; height: 50px; }
+    .footer { font-size: 1.05rem; }
+    .floating-lamp { width: 60px; height: 30px; }
+  }
+
+  @media (max-width: 768px) {
+    h1 { font-size: 2.8rem; }
+    .message { font-size: 1rem; padding: 18px; }
+    .lamp { width: 90px; height: 45px; }
+    .footer { font-size: 1rem; }
+    .floating-lamp { width: 50px; height: 25px; }
+  }
+
+  @media (max-width: 480px) {
+    h1 { font-size: 2.2rem; }
+    .message { font-size: 0.9rem; padding: 15px; }
+    .lamp { width: 70px; height: 35px; }
+    .footer { font-size: 0.9rem; }
+    .floating-lamp { width: 40px; height: 20px; }
+  }
+
+  @media (max-width: 360px) {
+    h1 { font-size: 1.8rem; }
+    .message { font-size: 0.85rem; padding: 12px; }
+    .lamp { width: 60px; height: 30px; }
+    .footer { font-size: 0.85rem; }
+    .floating-lamp { width: 35px; height: 18px; }
+  }
+</style>
 </head>
 <body>
   <canvas id="fireworks"></canvas>
